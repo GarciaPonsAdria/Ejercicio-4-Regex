@@ -62,4 +62,4 @@ db.inventory.find({status:"B", qty:250})
 db.inventory.find({ item: { $not: /^p.*/ } } )
 
 // Encuentra todos los documentos cuyo status no sea B o su size.h no sea igual a 1.
-db.inventory.find( { $nor: [ { 'size.h': {h:1} }, { status: "B" } ]  } )
+db.inventory.find( { $nor: [ { 'size.h': {h:1} }, { status: "B" } ]  } ) 
